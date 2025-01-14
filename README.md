@@ -28,7 +28,6 @@ This project explores air pollution data in Liverpool to understand daily trends
 
 The core analysis and visualization steps are encapsulated in the R script below:
 
-- [analysis_script.R](https://github.com/your-username/INF6027-project/blob/main/R/analysis_script.R)
 
 This script includes:
 - Data import and cleaning
