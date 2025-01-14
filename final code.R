@@ -1,8 +1,3 @@
-# ===============================
-# Air Pollution Data Analysis Script with Dual Y-Axes
-# (SHORTENED VERSION: removed 'if' checks for installed packages)
-# ===============================
-
 # -------------------------------
 # 1. Load Necessary Libraries
 # -------------------------------
