@@ -1,24 +1,21 @@
 # INF6027 Project
 
 ## Introduction
-In this project, I explore the relationships between various socioeconomic factors and public health outcomes. The research utilizes R for data cleaning, analysis, and visualization.
+This project examines air pollution data in Liverpool to understand daily trends in temperature, humidity, and particulate matter.
 
 ## Research Questions
-1. How do income levels correlate with health outcomes?
-2. Are there significant differences in rural vs. urban settings for certain health indicators?
+1. What are the daily variations of PM2.5 in different regions of the city?
+2. Does temperature significantly correlate with PM levels?
 
 ## Key Findings
-- Income levels show a strong positive correlation with certain health outcomes (e.g., life expectancy).
-- Rural regions tend to have fewer healthcare facilities, impacting overall public health metrics.
+- Strong correlation found between PM1.0 and PM2.5 (r=0.85)
+- Outlier removal clarified daily trends
+- Temperature showed a moderate negative correlation with PM
 
 ## R Code
-You can find the R scripts in the [`R/` folder](R/). The scripts include:
-- `data_cleaning.R`: Prepares the dataset for analysis.
-- `analysis.R`: Conducts statistical tests and generates plots.
-- `report.Rmd`: An R Markdown report summarizing the findings.
+- [analysis_script.R](analysis_script.R) (R code for data processing and plotting)
 
-## Instructions to Download and Run
-1. **Clone the repository**  
+## Instructions
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/INF6027-project.git
-# INF6027-project
