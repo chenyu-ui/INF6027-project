@@ -13,7 +13,7 @@ This project examines air pollution data in Liverpool to understand daily trends
 - Temperature showed a moderate negative correlation with PM
 
 ## R Code
-- [https://github.com/chenyu-ui/INF6027-project/blob/main/final%20code.R](analysis_script.R) (R code for data processing and plotting)
+- [final code.R) (R code for data processing and plotting)
 
 ## Instructions
 1. **Clone the repository**:
