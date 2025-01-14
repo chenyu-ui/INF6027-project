@@ -26,8 +26,7 @@ This project explores air pollution data in Liverpool to understand daily trends
 
 ## R Code
 
-The core analysis and visualization steps are encapsulated in the R script below:
-
+The core analysis and visualization steps are encapsulated in the instructions.
 
 This script includes:
 - Data import and cleaning
