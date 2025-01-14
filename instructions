@@ -1,0 +1,31 @@
+## Instructions for Downloading and Running the Code
+
+Follow the steps below to replicate the analysis on your local machine. This guide assumes you have a basic understanding of using Git and R.
+
+### Prerequisites
+
+1. **Install Git**
+   - **Windows:** Download and install Git from [git-scm.com](https://git-scm.com/download/win).
+   - **macOS:** Install Git using Homebrew:
+     ```bash
+     brew install git
+     ```
+   - **Linux:** Install Git via your distribution’s package manager, e.g.,
+     ```bash
+     sudo apt-get install git
+     ```
+
+2. **Install R**
+   - Download and install R from [CRAN](https://cran.r-project.org/mirrors.html).
+
+3. **Install RStudio (Optional but Recommended)**
+   - Download and install RStudio from [rstudio.com](https://www.rstudio.com/products/rstudio/download/).
+
+### Step-by-Step Guide
+
+#### 1. Clone the Repository
+
+Open your terminal (or Git Bash on Windows) and execute the following command to clone the repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/INF6027-project.git
