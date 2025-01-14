@@ -1,31 +1,55 @@
-## Instructions for Downloading and Running the Code
+## Instructions for Running the Code
 
-Follow the steps below to replicate the analysis on your local machine. This guide assumes you have a basic understanding of using Git and R.
+To replicate the air pollution data analysis on your local machine, follow these steps:
 
-### Prerequisites
+1. **Install Required Software:**
+   - **Git:** Download and install Git from [git-scm.com](https://git-scm.com/downloads) appropriate for your operating system.
+   - **R:** Download and install R from [CRAN](https://cran.r-project.org/mirrors.html).
+   - **RStudio (Optional but Recommended):** Download and install RStudio from [rstudio.com](https://www.rstudio.com/products/rstudio/download/).
 
-1. **Install Git**
-   - **Windows:** Download and install Git from [git-scm.com](https://git-scm.com/download/win).
-   - **macOS:** Install Git using Homebrew:
-     ```bash
-     brew install git
-     ```
-   - **Linux:** Install Git via your distribution’s package manager, e.g.,
-     ```bash
-     sudo apt-get install git
-     ```
+2. **Clone the Repository:**
+   Open your terminal (or Git Bash on Windows) and execute the following command to clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/INF6027-project.git
+Alternatively, navigate to https://github.com/your-username/INF6027-project in your web browser, click the green Code button, select Download ZIP, and extract the contents to your desired location.
 
-2. **Install R**
-   - Download and install R from [CRAN](https://cran.r-project.org/mirrors.html).
+Navigate to the Project Directory: Change your working directory to the cloned repository by running:
 
-3. **Install RStudio (Optional but Recommended)**
-   - Download and install RStudio from [rstudio.com](https://www.rstudio.com/products/rstudio/download/).
+bash
+Copy code
+cd INF6027-project
+Open the Project in RStudio:
 
-### Step-by-Step Guide
+Launch RStudio.
+Click on File > Open Project..., navigate to the cloned INF6027-project folder, and select the .Rproj file if available. If no project file exists, you can open the main R script directly by going to File > Open File... and selecting analysis_script.R.
+Install Required R Packages: In the R console within RStudio, install the necessary packages by running:
 
-#### 1. Clone the Repository
+r
+Copy code
+install.packages(c("ggplot2", "reshape2", "lubridate", "dplyr", "corrplot", "writexl"))
+This command installs ggplot2 for plotting, reshape2 for data reshaping, lubridate for date-time manipulation, dplyr for data manipulation, corrplot for correlation matrix visualization, and writexl for exporting data to Excel.
 
-Open your terminal (or Git Bash on Windows) and execute the following command to clone the repository to your local machine:
+Prepare the Dataset:
 
-```bash
-git clone https://github.com/your-username/INF6027-project.git
+Ensure you have the air_pollution.csv file. If you don't have it, obtain it from the project maintainer or relevant source.
+Create a data folder within the project directory if it doesn't already exist:
+bash
+Copy code
+mkdir data
+Move the air_pollution.csv file into the data folder.
+Update File Paths (If Necessary): Open analysis_script.R located in the R/ directory and verify that the file_path variable correctly points to the location of air_pollution.csv. It should look like this:
+
+r
+Copy code
+file_path <- "data/air_pollution.csv"
+Modify the path if your data file is located elsewhere.
+
+Run the Analysis Script:
+
+In RStudio, open analysis_script.R from the R/ folder.
+Execute the script by clicking the Source button to run the entire script at once. Alternatively, you can run the script line-by-line or in sections by selecting the desired code and pressing Ctrl + Enter (Windows) or Cmd + Enter (macOS).
+Review the Outputs:
+
+Generated Plots: Navigate to the outputs/ directory within the project folder to find the generated PNG files, such as Improved_Faceted_Plots.png and Correlation_Matrix.png.
+Processed Data: The script may export cleaned and summarized data to the outputs/ folder or display them within the R environment. Look for files like daily_means_no_outliers.csv.
+Console Messages: Monitor the R console for any warnings or messages indicating issues like missing values or file path errors.
